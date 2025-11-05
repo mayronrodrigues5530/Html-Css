@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
+        caption {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 1.6em;
+          font-weight: bold;
+          padding: 10px;
+          background-color: lightgray;
+        }
+        
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
-        tr, td {
+
+        table >thead > tr > th {
+          position: sticky;
+          top: -1px;
+          background-color: gray;
+        }
+
+        tr, td , th{
             border: 1px solid black;
             padding: 10px;
         }
@@ -17,6 +34,10 @@
         thead {
             background-color: gray;
         }
+
+        tbody > tr:nth-child(2n) {
+          background-color: lightgray;
+        } 
 
         tfoot {
             background-color: gray;
@@ -44,12 +65,13 @@
     -->
 
    <table>
+    <caption>População das unidades Federais</caption>
     <thead>
       <tr>
-        <td>Ordem</td>
-        <td>UF</td>
-        <td>Municipio</td>
-        <td>População 2025</td>
+        <th scope="col">Ordem</td>
+        <th scope="col">UF</td>
+        <th scope="col">Municipio</td>
+        <th scope="col" style="width: 60px;">População 2025</td>
       </tr>
     </thead>
     <tbody>
@@ -89,15 +111,105 @@
          <td>Belo Horizonte (MG)</td>
          <td class="num">2.415.872</td>
        </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
+       <tr>
+         <td>6º</td>
+         <td>MG</td>
+         <td>Belo Horizonte (MG)</td>
+         <td class="num">2.415.872</td>
+       </tr>
     </tbody>
     <tfoot>
        <tr>
-        <td>Total Brasil</td>
-        <td class="sem"></td>
-        <td class="sem"></td>
+        <th scope="row">Total Brasil</td>
+        <th class="sem"></td>
+        <th class="sem"></td>
         <td><strong>213.421.037</strong></td>
        </tr>
     </tfoot>
    </table>
+   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, molestiae. Voluptatem nulla numquam qui quae possimus velit unde suscipit placeat voluptas nemo est sapiente distinctio, adipisci explicabo facilis mollitia cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ducimus mollitia quos commodi placeat voluptatibus velit aliquid non ut? Quae harum ratione tempora explicabo nisi est magnam eum vel pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi quis id ipsam possimus explicabo at quos, inventore ad aliquam ullam sapiente, cumque deserunt quidem illo praesentium. Distinctio, deleniti maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facilis deleniti velit, libero sequi hic quas ea, eos perferendis dolor sint iusto incidunt temporibus possimus optio pariatur? Sed, distinctio corrupti.</p>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, molestiae. Voluptatem nulla numquam qui quae possimus velit unde suscipit placeat voluptas nemo est sapiente distinctio, adipisci explicabo facilis mollitia cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ducimus mollitia quos commodi placeat voluptatibus velit aliquid non ut? Quae harum ratione tempora explicabo nisi est magnam eum vel pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi quis id ipsam possimus explicabo at quos, inventore ad aliquam ullam sapiente, cumque deserunt quidem illo praesentium. Distinctio, deleniti maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facilis deleniti velit, libero sequi hic quas ea, eos perferendis dolor sint iusto incidunt temporibus possimus optio pariatur? Sed, distinctio corrupti.</p>
+       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, molestiae. Voluptatem nulla numquam qui quae possimus velit unde suscipit placeat voluptas nemo est sapiente distinctio, adipisci explicabo facilis mollitia cupiditate! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ducimus mollitia quos commodi placeat voluptatibus velit aliquid non ut? Quae harum ratione tempora explicabo nisi est magnam eum vel pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi animi quis id ipsam possimus explicabo at quos, inventore ad aliquam ullam sapiente, cumque deserunt quidem illo praesentium. Distinctio, deleniti maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, facilis deleniti velit, libero sequi hic quas ea, eos perferendis dolor sint iusto incidunt temporibus possimus optio pariatur? Sed, distinctio corrupti.</p>
 </body>
 </html>
