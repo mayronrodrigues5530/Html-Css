@@ -6,23 +6,44 @@
     <title>Exemplo de formulário</title>
 </head>
 <body>
-            <p>
-                <fieldset>
-                    <h1>Exemplo de formulário</h1>
-                    <form action="iest">Estado</form>
-                    <select name="estado" id="iest">
-                
-                    <optgroup label="Região sudeste">
-                       <option value="SP">São Paulo</option>
-                       <option value="MG">Minas Gerais</option>
-                       <option value="RJ">Rio de Janeiro</option>
-                    </optgroup>
-                    <optgroup label="Região Nordeste">
-                        <option value="MA">Maranhão</option>
-                        <option value="PE">Pernanbuco</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                    </optgroup>
-                </fieldset>
-            </p>
+    <form action="iest" method="post" autocomplete="on">
+       <label for="iest">Estado:</label>
+       <select name="estado" id="iest">
 
+            <optgroup label="Região Sudeste" id="iest">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste" id="iest">
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="PE">Pernambuco</option>
+                <option value="MA">Maranhão</option>
+            </optgroup>
+       </select>
+
+       <p>
+           <label for="iprof">Profissão</label>
+           <input type="text" name="profissão" id="iprof" list="ilist">
+           <datalist id="ilist">
+              <option>Adminitrador</option>
+              <option>Desenvolvedor</option>
+              <option>Contabilista</option>
+           </datalist>
+       </p>
+          
+        <p>
+            <label for="imsg">Mensagen:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+    
+       <p>
+          <input type="submit" value="Enviar">
+        </p>
+       <p>
+          <input type="reset" value="Limpar">
+       </p>
+    </form>
+</body>   
 </html>
