@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* Tela Site*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header menu {
+    background-color: gray;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+menu li {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+}
+
+article {
+    width: 600px;
+    text-align: justify;
+    display: block;
+    margin: auto;
+}
