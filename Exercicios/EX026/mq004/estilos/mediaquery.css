@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* Todas as demias medias*/
+
+/*Typical devicy breakpoints
+-----------------------------
+Pequenas telas: Até 600px;
+Celular: De 600px até 768px;
+Tablet: De 768px até 992px;
+Desktop: De 992px até 1200px;
+Grandes Telas: Acima de 1200px;
+*/
+
+@media print /* Impressoras*/ { 
+    main {
+        font-family: 'Courier New', Courier, monospace;
+        border: 1px solid black;
+        width: 80vw;
+    }
+
+    main::after {
+        content: 'Site Criado por Mayron Rodrigues';
+        text-decoration: underline;
+        font-size: 0.5em;
+    }
+
+    img#phone {
+    display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    img#pc {
+        display: none;
+    }
+    img#print {
+        display: block;
+    }
+    img#tv {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) /* Tablet*/{
+
+    body {
+        background: black url(../imagens/back-tablet.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    main {
+        width: 450px;
+    }
+
+    img#phone {
+    display: none;
+    }
+    img#tablet {
+        display: block;
+    }
+    img#pc {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#tv {
+        display: none;
+    }
+}
+    
+
+@media screen and (min-width: 992px) and (max-width: 1200px) /* Desktop*/ {
+
+    body {
+        background: black url(../imagens/back-pc.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    main {
+        width: 500px;
+    }
+    
+    img#phone {
+    display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    img#pc {
+        display: block;
+    }
+    img#print {
+        display: none;
+    }
+    img#tv {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1200px) /* Telas Grandes*/ {
+
+    body {
+        background: black url(../imagens/back-tv.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    main {
+        width: 550px;
+    }
+
+    img#phone {
+    display: none;
+    }
+    img#tablet {
+        display: none;
+    }
+    img#pc {
+        display: none;
+    }
+    img#print {
+        display: none;
+    }
+    img#tv {
+        display: block;
+    }
+
+}
